@@ -35,7 +35,13 @@ header {
   background-color: #333;
 
 }
-
+a .bi {
+  color:#25D366;
+  font-size: 50px;
+  position: fixed;
+  top: 50%;
+  left: 90%;
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -51,6 +57,7 @@ nav ul li a {
   font-weight: bold;
   border-radius: 4px;
   background-color: #7a7676;
+  box-shadow: inset #333 0 0px 5px 10px ;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -215,14 +222,15 @@ footer {
   header{ 
     padding: 0;
     display: flex;
+    flex-direction: column;
   }
   .img-header{
-    position: fixed;
-    top: 10px;
+    width: 100%;
+    object-fit: cover;
   }
   .navegacao{
-    margin-top: 200px;
-    background-color: blue;
+    margin-top: 20px;
+    /* background-color: blue; */
     text-align: center;
     justify-content: center;
     text-align: center;
@@ -242,8 +250,8 @@ footer {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0;
-    background-color: red;
+    padding: 0 0 1.5rem 0;
+    /* background-color: red; */
   }
    .inicio img {
     background-size: cover;
