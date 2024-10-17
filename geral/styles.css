@@ -7,9 +7,14 @@ body {
     font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #525151;
+    background-color: #b7b3b3;
     position: relative;
+    color: #000;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: relative;
   /* display: flex; */
@@ -20,44 +25,85 @@ header {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   /* overflow: hidden; */
 }
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
 
 .img-header {
   width: 100%;
-  height: auto;
+  height: 27rem;
   object-fit: cover;
   box-shadow: inset 1px 5px 20px rgba(0, 0, 0, 0.7);
+}
+.topo {
+  display: flex;
+  background-color: #ccc;
+  width: 100%;
+  text-align: center;
+  height: 5em;
+  color: #cc0000;
+  text-transform: uppercase;
+  font-family: 'poppins', sans-serif;
+}
+.topo h1 {
+  font-size: 2.3rem;
+  text-shadow: 1px 2px 9px  rgba(0, 0, 0, 0.7);;
+}
+.logo {
+  margin-left: 10px;
+  width: 5rem;
+  background-color: #ccc;
 }
 
 /* Estilo do Menu de Navegação */
 .navegacao {
   width: 100%;
+  height: 6.25rem;
+  background-color: #e8e2e2;
+  margin-top: 0;
+  display: flex;
   text-align: center;
-  background-color: #333;
-
+  align-items: center;
+  justify-content: center;
 }
-a .bi {
+.formulario a .bi-whatsapp {
   color:#25D366;
   font-size: 50px;
   position: fixed;
-  top: 50%;
-  left: 90%;
+  top: 5%;
+  right: 5%;
+}
+ #orcamento {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 7px;
 }
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center;
 }
 
 nav ul li a {
-  color: #333;
+  color: #000;
+  font-size: 1.1rem;
   text-decoration: none;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 4px;
-  background-color: #7a7676;
-  box-shadow: inset #333 0 0px 5px 10px ;
+  background-color: #ccc;
+  box-shadow: inset #e8e2e2 0 0px 5px 10px ;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -67,66 +113,10 @@ nav ul li a:hover {
   color: #ffffff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-/*
-header {
-    display: flex;
-    min-height: 22em;
-    /* background-image: url(img/capa-pronta.png); */
-    /* background-size: cover;
-    text-align: center;
-    padding: 0;
-    box-shadow: -1px 0 20px 0 rgba(3, 0, 0, 0.693);
-    position: relative; */
-/* }
-.img-header{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.7);
-}
-nav { 
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  border: 1px dashed;
-  width: 100%;
-}
-ul li a {
-  text-decoration: none;
-  color: #333;
-  transition: ease-in-out .5s;
-}
-ul {
-  gap: 2.3rem;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  text-transform: uppercase;
-}
-ul li a:hover {
-  color: #1d1b1b;
-  font-weight: 500;
-  background-color: #a09d9d;
-  padding: 15px;
-} */ 
-/* header h1 {
-  text-shadow: -1px 0 10px 0 rgb(26, 21, 21);
-  background-color: #a09d9d;
-} */
-/* #logo {
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    margin: 0;
-} */
-
 .hero {
     text-align: center;
     margin: 20px 0;
-    color: #e8e2e2;
+    color: #000;
 }
 .inicio {
   width: 84%;
@@ -157,9 +147,39 @@ ul li a:hover {
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: inset 1px 5px 20px rgba(0, 0, 0, 0.7);
-
 }
-
+.local {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.local #local, #whatsapp, #avalia {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem ;
+  width: 60%;
+  font-size: 1.5rem;
+  background-color: #b7b3b3;
+  margin: 1rem auto;
+  text-align: center;
+  height: 10rem;
+  border-radius: 10px;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.7);
+}
+.local .bi{
+  font-size: 2.5rem;
+  color: #cc0000;
+  text-shadow: #222 4px 5px 6px;
+  transition: all .4s;
+}
+.local .bi:hover {
+  transform: scale(2);
+}
 .formulario {
     width: 80%;
     margin: 0 auto 5rem;
@@ -180,14 +200,7 @@ input, select, textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-/* button {
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-} */
+
 button {
   background-color: #ff0000;
   color: white;
@@ -206,8 +219,8 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #e8e2e2;
+    color: #000;
     text-align: center;
     padding: 8px;
     position: fixed;
@@ -226,15 +239,29 @@ footer {
   }
   .img-header{
     width: 100%;
+    height: 50%;
     object-fit: cover;
+  }
+  .topo{
+    display: block;
+    font-size: 1rem;
+    height: auto;
+    line-height: 1rem;
+  }
+  .local {
+    width: 100%;
   }
   .navegacao{
     margin-top: 20px;
+    height: 12.2rem;
     /* background-color: blue; */
     text-align: center;
     justify-content: center;
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
+
   .formulario {
       width: 90%; /* Ajusta a largura em telas menores */
   }
@@ -266,6 +293,7 @@ footer {
   nav ul {
     flex-direction: column;
     padding: 0;
+    line-height: 5px;
   }
   
   nav ul li a {
