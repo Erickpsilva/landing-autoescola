@@ -7,7 +7,7 @@ body {
     font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b7b3b3;
+    background-color: #ffffff;
     position: relative;
     color: #000;
 }
@@ -40,7 +40,7 @@ h3 {
 }
 .topo {
   display: flex;
-  background-color: #ccc;
+  background-color: #ffffff;
   width: 100%;
   text-align: center;
   height: 5em;
@@ -55,7 +55,6 @@ h3 {
 .logo {
   margin-left: 10px;
   width: 5rem;
-  background-color: #ccc;
 }
 
 /* Estilo do Menu de Navegação */
@@ -175,11 +174,30 @@ nav ul li a:hover {
   font-size: 2.5rem;
   color: #cc0000;
   text-shadow: #222 4px 5px 6px;
-  transition: all .4s;
 }
-.local .bi:hover {
-  transform: scale(2);
+#local:hover, #whatsapp:hover, #avalia:hover {
+  transform: scale(1.05);
+  transition: .5s;
 }
+.aulas {
+  display: flex;
+  width: 100%;
+  min-height: 22rem;
+  overflow-y: hidden;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+.aulas-img {
+  width: 35%;
+  background-size: cover;
+}
+.aulas-img img {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
 .formulario {
     width: 80%;
     margin: 0 auto 5rem;
@@ -222,7 +240,7 @@ footer {
     background-color: #e8e2e2;
     color: #000;
     text-align: center;
-    padding: 8px;
+    padding: 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -288,6 +306,18 @@ footer {
   } 
   .inicio h4 {
     padding: 10px;
+  }
+  .aulas{
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .aulas-img {
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
   }
   
   nav ul {
