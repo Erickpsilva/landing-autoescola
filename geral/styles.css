@@ -329,7 +329,7 @@ footer {
     object-fit: cover;
   }
   .logo {
-    width: 2.5rem;
+    width: 2.4rem;
   }
   .topo{
     display: flex;
@@ -346,7 +346,7 @@ footer {
     margin: auto;
   }
   .topo h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .local {
     width: 100%;
@@ -404,8 +404,26 @@ footer {
     width: 70%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem auto;
+  }¨
+  .sorteio {
+    max-width: 85%;
   }
-  
+  .sorteio .imagem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagem img:hover {
+    transform: scale(1.15);
+    transition: .5s;
+  }
+  .sorteio p {
+    background-color: #b7b3b3;
+    text-transform: uppercase;
+  }
+
   nav ul {
     flex-direction: column;
     padding: 0;
