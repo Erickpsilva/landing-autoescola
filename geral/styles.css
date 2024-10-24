@@ -3,16 +3,23 @@
 
 
 /* Reset básico */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
     font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
+    width: 100vw;
     background-color: #ffffff;
     position: relative;
     color: #000;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -42,6 +49,10 @@ p {
   object-fit: cover;
   box-shadow: inset 1px 5px 20px rgba(0, 0, 0, 0.7);
 }
+.titulo {
+  padding: 1rem;
+  margin-top: .5rem;
+ }
 .topo {
   display: flex;
   background-color: #e8e2e2;
@@ -87,12 +98,28 @@ p {
   top: 5%;
   right: 5%;
 }
- #orcamento {
+ /* #orcamento {
   text-decoration: none;
   color: #fff;
   background-color: #ccc;
   padding: 5px;
   border-radius: 7px;
+} */
+.saiba-mais {
+  display: block;
+  width: fit-content;
+  font-weight: 500;
+  justify-content: center;
+  border-radius: 3.5rem;
+  background-color: #cc0000;
+  text-decoration: none;
+  color: #e1d3d3;
+  padding: .5rem;
+  transition: all .4s;
+  margin: 2rem auto;
+}
+.saiba-mais:hover {
+  background-color: #ff0000;
 }
 nav ul {
   display: flex;
@@ -166,6 +193,8 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 .local #local, #whatsapp, #avalia {
   display: flex;
@@ -189,13 +218,17 @@ nav ul li a:hover {
   transform: scale(1.05);
   transition: .5s;
 }
-
+.habilitacao {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: auto;
+}
 .aulas {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-around;
   min-height: 22rem;
-  padding: .4rem;
+  padding: 2rem;
   gap: .5rem;
 }
 .aulas-img {
@@ -211,10 +244,30 @@ nav ul li a:hover {
   background-attachment: fixed;
   object-fit: cover;
 }
+.sorteio {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  min-height: 22rem;
+  width: 100%;
+}
+.imagem {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 3rem 0;
+}
+.imagem img {
+  width: 15rem;
+}
+img.capa-rosa {
+  width: 16rem;
+}
 
 .formulario {
     width: 80%;
-    margin: 0 auto 5rem;
+    margin: 2rem auto 5rem;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
